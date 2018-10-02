@@ -1,0 +1,97 @@
+:root{
+  --header-background: rgb(125,125,125,0.95);
+  --header-color: black;
+  --background-color: white;
+  --text-color:black;
+  --background-hover:white;
+  --color-hover:black;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+}
+html,body{
+  margin:0;
+}
+header{
+  width: 100%;
+  display: inline-flex;
+  position: fixed;
+  background-color: var(--header-background);
+  color: var(--header-color);
+  z-index:2;
+}
+#nav-title{
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#nav-title h1{
+  margin: 10px 0;
+}
+#nav-button{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline:0;
+    font-size: 30px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+nav{
+  width:200px;
+  position: fixed;
+  display: none;
+  height: 100%;
+  background-color: var(--header-background);
+  z-index: 1;
+}
+nav a{
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  padding: 15px;
+  transition: background 0.25s, color 0.25s;
+}
+nav a:hover{
+  background-color: var(--background-hover);
+  color: var(--color-hover);
+}
+h1,h2,h3{
+  font-weight: normal;
+}
+#content{
+
+}
+.section{
+  padding: 15px 15px;
+}
+.overlay{
+  background-color: rgba(255,255,255,0.8);
+  padding: 15px;
+}
+img{
+  float: right;
+  padding: 0 15px;
+}
+#section1,#section2,#section3{
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 50px;
+}
+h1{
+  text-align: center;
+}
+#section1{
+  background-image: url("jinnah2.jpg");
+}
+#section2{
+  background-image: url("shakazulu2.jpg");
+}
+#section3{
+  background-image: url("maozedong2.jpg");
+}
